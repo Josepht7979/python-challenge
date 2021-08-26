@@ -16,7 +16,7 @@ with open (pyBank, newline="") as csvfile:
 
     total_months = len(months)
     print (f"Total Months: {total_months}")
-    
+
 #------------------------------------------
     
     net_total = 0
@@ -57,5 +57,6 @@ with open('Results.txt', "w") as text:
         text.write(f"Total Months: {total_months}\n")
         text.write(f"Total: ${net_total}\n")
         text.write(f"Average Change: ${round((average_monthly_change))}\n")
-        text.write(f"Greatest Increase in Revenues: ${max_change}\n")
-        text.write(f"Greatest Decrease in Revenues:  ${min_change}\n")
+        text.write(f"Greatest Increase in Profits: ${max_change}\n")
+        text.write(f"Greatest Decrease in Profits:  ${min_change}\n")
+
